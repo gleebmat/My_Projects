@@ -1,0 +1,19 @@
+.env
+.venv/
+__pycache__/
+# 1. Database Files
+*.db
+*.sqlite3
+
+# 2. Local Data (Don't upload huge CSVs to GitHub)
+data/*.csv
+data/*.xlsx
+data/*.json
+
+# 3. OS specific files
+.DS_Store
+Thumbs.db
+
+# 4. Logs and temporary files
+*.log
+.pytest_cache/
