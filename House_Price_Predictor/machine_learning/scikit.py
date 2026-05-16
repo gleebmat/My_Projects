@@ -58,9 +58,11 @@ df.describe()
 
 joblib.dump(best_m, "data/models/xgboost.joblib")
 joblib.dump(scaler, "data/models/scaler.joblib")
+joblib.dump(X_train.columns.tolist(), "data/models/model_columns.joblib")
 
 
-# -----------------------------
+# ------------------------------------------------------------------------------------
+
 
 X_train_t = torch.tensor(X_train_scaled, dtype=torch.float32)
 y_train_t = torch.tensor(y_train.values, dtype=torch.float32).view(-1, 1)
