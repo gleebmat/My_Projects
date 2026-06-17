@@ -5,9 +5,17 @@ from fastapi_routing.users_router_calls import router as users_router
 from fastapi_routing.reader_router_calls import router as reader_router
 from fastapi_routing.chat_router_calls import router as chat_router
 from fastapi_routing.practice_router_calls import router as practice_router
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # tighten this in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(translation_router, tags=["Your input translation"])
 app.include_router(users_router, tags=["Users Manager"])
