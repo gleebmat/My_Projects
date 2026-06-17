@@ -1,0 +1,18 @@
+[project]
+name = "ai-strategy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.136.1",
+    "httpx>=0.28.1",
+    "ipykernel>=7.2.0",
+    "load-dotenv>=0.1.0",
+    "openai>=2.37.0",
+    "psycopg2>=2.9.12",
+    "pydantic>=2.13.4",
+    "reflex>=0.9.5.post2",
+    "sqlalchemy>=2.0.49",
+    "uvicorn>=0.47.0",
+]

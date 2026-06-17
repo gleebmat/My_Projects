@@ -1,0 +1,15 @@
+{
+  "explanation": "Given the current battlefield situation, I have two units that can attack enemy units this turn. My Tank (Index 4) can attack the enemy Warplane (Index 5), and my Warplane (Index 5) can attack the enemy Sniper (Index 3). The enemy Sniper is critically low on health, making it a prime target for elimination. By attacking the Sniper with my Warplane, I can potentially remove it from the battlefield, reducing the enemy's attack options. Meanwhile, my Tank attacking the enemy Warplane will help weaken it, as it poses a threat to my Tank. These actions are aggressive and aim to reduce the enemy's capabilities while maintaining pressure.",
+  "actions": [
+    {
+      "unit_index": 4,
+      "action_type": "attack",
+      "target_index": 5
+    },
+    {
+      "unit_index": 5,
+      "action_type": "attack",
+      "target_index": 3
+    }
+  ]
+}

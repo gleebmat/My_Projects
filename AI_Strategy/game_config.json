@@ -1,0 +1,47 @@
+{
+  "map_width": 30,
+  "map_height": 30,
+  "unit_characteristics": {
+    "Combatant": {
+      "max_hp": 100,
+      "max_move": 8,
+      "min_attack": 8,
+      "max_attack": 14,
+      "range": 4
+      },
+    "Grenadier": {
+      "max_hp": 110,
+      "max_move": 6,
+      "min_attack": 12,
+      "max_attack": 23,
+      "range": 4
+      },
+    "Sniper": {
+      "max_hp": 80,
+      "max_move": 5,
+      "min_attack": 15,
+      "max_attack": 25,
+      "range": 8
+      },
+    "Tank": {
+      "max_hp": 200,
+      "max_move": 6,
+      "min_attack": 25,
+      "max_attack": 40,
+      "range": 5
+      },
+    "Warplane": {
+      "max_hp": 130,
+      "max_move": 15,
+      "min_attack": 10,
+      "max_attack": 50,
+      "range": 7
+      }
+  },
+  "rules": [
+    "Coordinate system: X is 0 to 29 from left to right, Y is 0 to 29 from bottom to top.",
+    "You must issue exactly 2 actions per turn. They must be for different units UNLESS you only have 1 living unit left, in which case both actions go to that single unit.",
+    "Movement limits use Chebyshev distance: max(abs(dx), abs(dy)) <= max_move.",
+    "Do not issue move commands onto tiles currently occupied by any other unit."
+  ]
+}

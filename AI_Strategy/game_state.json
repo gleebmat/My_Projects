@@ -1,0 +1,110 @@
+{
+  "map_width": 30,
+  "map_height": 30,
+  "action_number": 4,
+  "acting_team": "Harry",
+  "ai_units": [
+    {
+      "index": 1,
+      "type": "Combatant",
+      "x": 27,
+      "y": 13,
+      "hp": 100,
+      "max_move": 8,
+      "range": 4,
+      "can_act": true,
+      "attackable_targets": []
+    },
+    {
+      "index": 2,
+      "type": "Grenadier",
+      "x": 29,
+      "y": 29,
+      "hp": 110,
+      "max_move": 6,
+      "range": 4,
+      "can_act": true,
+      "attackable_targets": []
+    },
+    {
+      "index": 3,
+      "type": "Sniper",
+      "x": 25,
+      "y": 14,
+      "hp": 80,
+      "max_move": 5,
+      "range": 8,
+      "can_act": true,
+      "attackable_targets": []
+    },
+    {
+      "index": 4,
+      "type": "Tank",
+      "x": 18,
+      "y": 11,
+      "hp": 164,
+      "max_move": 6,
+      "range": 5,
+      "can_act": true,
+      "attackable_targets": [5]
+    },
+    {
+      "index": 5,
+      "type": "Warplane",
+      "x": 15,
+      "y": 21,
+      "hp": 75,
+      "max_move": 15,
+      "range": 7,
+      "can_act": true,
+      "attackable_targets": [3]
+    }
+  ],
+  "human_units": [
+    {
+      "index": 1,
+      "type": "Combatant",
+      "x": 0,
+      "y": 15,
+      "hp": 100,
+      "alive": true,
+      "attackable_targets": []
+    },
+    {
+      "index": 2,
+      "type": "Grenadier",
+      "x": 2,
+      "y": 8,
+      "hp": 110,
+      "alive": true,
+      "attackable_targets": []
+    },
+    {
+      "index": 3,
+      "type": "Sniper",
+      "x": 9,
+      "y": 14,
+      "hp": 14,
+      "alive": true,
+      "attackable_targets": [5]
+    },
+    {
+      "index": 4,
+      "type": "Tank",
+      "x": 0,
+      "y": 29,
+      "hp": 200,
+      "alive": true,
+      "attackable_targets": []
+    },
+    {
+      "index": 5,
+      "type": "Warplane",
+      "x": 15,
+      "y": 10,
+      "hp": 130,
+      "alive": true,
+      "attackable_targets": [4]
+    }
+  ]
+}
