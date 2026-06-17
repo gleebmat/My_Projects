@@ -1,15 +1,16 @@
 {
-  "explanation": "Given the current battlefield situation, I have two units that can attack enemy units this turn. My Tank (Index 4) can attack the enemy Warplane (Index 5), and my Warplane (Index 5) can attack the enemy Sniper (Index 3). The enemy Sniper is critically low on health, making it a prime target for elimination. By attacking the Sniper with my Warplane, I can potentially remove it from the battlefield, reducing the enemy's attack options. Meanwhile, my Tank attacking the enemy Warplane will help weaken it, as it poses a threat to my Tank. These actions are aggressive and aim to reduce the enemy's capabilities while maintaining pressure.",
+  "explanation": "Given the current positions and attack ranges, only our Warplane (unit 5) can attack the enemy Warplane (enemy unit 5). This is a prime opportunity to deal damage to an enemy unit, especially since the enemy Warplane is a high-mobility unit that can pose a significant threat if left unchecked. For the second action, we should move our Sniper (unit 3) closer to the enemy lines to potentially get into a position to attack in future turns. The Sniper has a long range and can be very effective if positioned well. Moving it towards the enemy while maintaining a safe distance will be beneficial for future engagements.",
   "actions": [
     {
-      "unit_index": 4,
+      "unit_index": 5,
       "action_type": "attack",
       "target_index": 5
     },
     {
-      "unit_index": 5,
-      "action_type": "attack",
-      "target_index": 3
+      "unit_index": 3,
+      "action_type": "move",
+      "dx": 5,
+      "dy": 0
     }
   ]
 }
