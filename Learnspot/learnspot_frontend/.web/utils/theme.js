@@ -1,1 +1,0 @@
-export default ({ ["styles"] : ({ ["global"] : ({ [":root"] : ({  }), ["body"] : ({ ["fontFamily"] : "'Satoshi', 'Inter', sans-serif", ["--default-font-family"] : "'Satoshi', 'Inter', sans-serif" }) }) }) })
